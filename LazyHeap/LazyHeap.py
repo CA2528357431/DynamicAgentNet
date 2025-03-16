@@ -19,6 +19,7 @@ class LazyHeap:
             fre, item = heapq.heappop(self.heap)
             if fre == self.dic[item]:
                 self.topk.remove(item)
+                to_delete = item
 
         return to_delete
 
